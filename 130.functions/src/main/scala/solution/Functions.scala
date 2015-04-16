@@ -17,6 +17,6 @@ object Functions extends App {
 
   def fact(to: Int) = invoke(1, to)(mult)
 
-  def pow(base: Int, exponent: Int) = invoke(base, exponent - 1){ (base, acc) => acc * base }
+  def pow(base: Int, exponent: Int) = invoke(1, exponent){ (count, acc) => acc * base }
 
  }
